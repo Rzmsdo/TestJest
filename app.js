@@ -8,7 +8,7 @@ function fromEurotoDollar(dollar){
 }
 
 function fromDollarToYen(dollar){    
-return parseFloat((fromEurotoDollar(dollar)*oneEuroIs.JPY).toFixed(3));
+return parseFloat(((dollar*oneEuroIs.USD)*oneEuroIs.JPY).toFixed(3));
 }
 
 function fromYentoPound(yen){
