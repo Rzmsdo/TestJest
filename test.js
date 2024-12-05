@@ -14,7 +14,7 @@ let money = fromEurotoDollar(1100);
 
 test('adds dollar to yen', () => {
 const { fromDollarToYen } = require('./app.js');
-    let total = (1500*1.07)*156.5;
+    let total = (1500/1.07)*156.5;
     expect(fromDollarToYen(1500)).toBe(total);
 
 

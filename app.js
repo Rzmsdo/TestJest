@@ -3,12 +3,12 @@ let oneEuroIs = {
     "USD": 1.07, // us dollar
     "GBP": 0.87, // british pound
 }
-function fromEurotoDollar(dollar){
-    return parseFloat((dollar*oneEuroIs.USD).toFixed(3)); 
+function fromEurotoDollar(Euro){
+    return parseFloat((Euro*oneEuroIs.USD).toFixed(3)); 
 }
 
 function fromDollarToYen(dollar){    
-return parseFloat(((dollar*oneEuroIs.USD)*oneEuroIs.JPY).toFixed(3));
+return parseFloat(((dollar/oneEuroIs.USD)*oneEuroIs.JPY).toFixed(3));
 }
 
 function fromYentoPound(yen){
